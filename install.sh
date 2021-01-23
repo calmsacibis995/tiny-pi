@@ -1,5 +1,5 @@
 #!/bin/bash
-# TinyPi install script
+# TinyPi install script, v.1.1
 # Made by calmsacibis995 in 2020
 
 # check if this script is run as root or with sudo
@@ -8,19 +8,9 @@ if [ "$EUID" -ne 0 ]
   then echo "Are you root? If you are not, please switch to root or use sudo."
   exit
 fi
-
-# Install procedure
-
-# System update
 pacman -Syyu
-
-# Install X.Org
 pacman -Sy xorg xorg-twm xterm xorg-apps xorg-xinit
-
-# Install DE
 pacman -Sy openbox lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings
-
-# config
 systemctl enable lightdm
 rm -rf /etc/hostname
 echo tinypi > /etc/hostname
@@ -39,3 +29,6 @@ fi
 if $cccp = no
   then exit
 fi
+
+# 1/23/2021 v.1.1 - Comment removal
+# 2020 v.1.0 -Inital release

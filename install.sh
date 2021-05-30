@@ -1,5 +1,5 @@
 #!/bin/bash
-# TinyPi install script, v.1.1
+# TinyPi install script, v.1.2
 # Made by calmsacibis995 in 2020
 
 # check if this script is run as root or with sudo

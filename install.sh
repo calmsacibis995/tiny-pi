@@ -30,5 +30,6 @@ if $cccp = no
   then exit
 fi
 
+# 5/30/2021 v1.2 - Updated instructions for setting timezone
 # 1/23/2021 v.1.1 - Comment removal
-# 2020 v.1.0 -Inital release
+# 2020 v.1.0 - Inital release

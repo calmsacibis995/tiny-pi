@@ -14,7 +14,7 @@ pacman -Sy openbox lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings
 systemctl enable lightdm
 rm -rf /etc/hostname
 echo tinypi > /etc/hostname
-echo Enter timezone:
+echo Enter timezone (Zone/Subzone):
 read timezone
 rm -rf /etc/localtime
 ln -s /usr/share/zoneinfo/$timezone /etc/localtime

@@ -14,7 +14,7 @@ pacman -Sy openbox lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings
 systemctl enable lightdm
 rm -rf /etc/hostname
 echo tinypi > /etc/hostname
-echo Enter timezone (Zone/Subzone):
+echo "Enter timezone (Zone/Subzone):"
 read timezone
 rm -rf /etc/localtime
 ln -s /usr/share/zoneinfo/$timezone /etc/localtime
@@ -30,6 +30,7 @@ if $cccp = no
   then exit
 fi
 
+# 7/17/2021 v1.2.1 - Updated instructions for setting timezone
 # 5/30/2021 v1.2 - Updated instructions for setting timezone
 # 1/23/2021 v.1.1 - Comment removal
 # 2020 v.1.0 - Inital release
